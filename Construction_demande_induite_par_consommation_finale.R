@@ -1,6 +1,5 @@
 library(tidyverse)
 
-
 # Importation du TES
 tes_francais <- read_csv("Donnees/tes_francais.csv")
 
