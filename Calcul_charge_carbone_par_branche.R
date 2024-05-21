@@ -65,7 +65,7 @@ intensite_carbone_induite |>
 fisc_carbone <- intensite_carbone_induite |>
   select(use_type, intensite_carbone_induite, intensite_carbone_induite_energie) 
 
-cor(rank(data$intensite_carbone_induite), rank(data$intensite_carbone_induite_energie))
+cor(rank(fisc_carbone$intensite_carbone_induite), rank(fisc_carbone$intensite_carbone_induite_energie))
 
 # On considère trois manières de fixer le prix relatif de chacune des trois branches:
 # 1) selon l'intensité carbone de chaque branche :
